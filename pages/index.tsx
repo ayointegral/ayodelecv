@@ -116,7 +116,7 @@ const Home = () => {
     Hey There <span className="wave">👋</span>
   </h2>
   <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-    I'm a seasoned DevSecOps Engineer and Technical Leader with a proven track record in building and 
+    I&apos;m a seasoned DevSecOps Engineer and Technical Leader with a proven track record in building and 
     scaling cloud infrastructure while fostering high-performing engineering teams. My expertise spans 
     cloud architecture, security implementation, and agile team leadership, with a particular focus on 
     AWS and Azure environments. I excel at bridging technical excellence with business objectives through:
