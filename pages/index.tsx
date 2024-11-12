@@ -51,9 +51,9 @@ const Home = () => {
       <main className="max-w-7xl mx-auto px-6 py-12 md:flex md:space-x-12 flex-grow">
 {/* Profile Section - Left */}
 <div className="flex flex-col items-center md:items-start md:w-1/3 mb-16 md:mb-0 animate-fade-in">
-  <div className="relative">
-    {/* Glow effect wrapper */}
-    <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+  <div className="relative group">
+    {/* Animated glow effect */}
+    <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-75 group-hover:opacity-100 animate-tilt transition duration-1000"></div>
     
     {/* Image container */}
     <div className="relative w-48 h-48 rounded-full overflow-hidden ring-2 ring-white/20 dark:ring-slate-800">
@@ -63,7 +63,7 @@ const Home = () => {
         width={192}
         height={192}
         priority
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
       />
     </div>
   </div>
@@ -73,34 +73,38 @@ const Home = () => {
   Lead DevSecOps Engineer & Technical Team Lead
 </p>
 
-            <div className="flex gap-4">
-              <a 
-                href="https://linkedin.com/in/ayoinc"
-                className="p-2 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://github.com/ayointegral"
-                className="p-2 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <Github className="w-5 h-5" />
-              </a>
+  {/* Social Links and Download Button */}
+  <div className="flex items-center gap-4">
+    <a 
+      href="https://linkedin.com/in/ayoinc"
+      className="p-2 bg-white/10 backdrop-blur-sm hover:bg-blue-500/10 rounded-xl transition-all duration-300 hover:scale-110"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+    >
+      <Linkedin className="w-5 h-5" />
+    </a>
+
+    <a 
+      href="https://github.com/ayointegral"
+      className="p-2 bg-white/10 backdrop-blur-sm hover:bg-purple-500/10 rounded-xl transition-all duration-300 hover:scale-110"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+    >
+      <Github className="w-5 h-5" />
+    </a>
 
             {/* Add near social links */}
+
             <button
-            onClick={() => generatePDF()}
-            className="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors"
-            >
-            <Download className="w-4 h-4" />
-            Download CV
-            </button>
+      onClick={() => generatePDF()}
+      className="flex items-center gap-2 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-xl shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
+    >
+      <Download className="w-4 h-4" />
+      <span>Download CV</span>
+    </button>
+
             </div>
           </div>
           {/* Main Content - Right */}
@@ -136,22 +140,42 @@ const Home = () => {
   </ul>
 </div>
 
+{/* Key Achievements Section with Bubbly Cards */}
 <div className="mb-16">
-  <h3 className="text-2xl font-bold mb-8">Key Achievements</h3>
+  <h2 className="text-2xl font-bold mb-8">Key Achievements</h2>
   <div className="grid md:grid-cols-2 gap-6">
-    <div className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg">
-      <h4 className="font-bold mb-2">Team Leadership</h4>
-      <p className="text-gray-600 dark:text-gray-300">
-        Successfully led and mentored multiple engineering teams, implementing Agile methodologies and 
-        fostering a culture of continuous improvement and innovation.
-      </p>
+    {/* Team Leadership Card */}
+    <div className="group relative">
+      {/* Gradient border effect */}
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-black to-black rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
+      
+      {/* Card content */}
+      <div className="relative h-full bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl transition duration-300 group-hover:scale-[1.01]">
+        <h3 className="font-bold text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-black to-black">
+          Team Leadership
+        </h3>
+        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+          Successfully led and mentored multiple engineering teams, implementing Agile methodologies and 
+          fostering a culture of continuous improvement and innovation.
+        </p>
+      </div>
     </div>
-    <div className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg">
-      <h4 className="font-bold mb-2">Technical Excellence</h4>
-      <p className="text-gray-600 dark:text-gray-300">
-        Architected and implemented robust cloud solutions, achieving 99.9% uptime and significant 
-        improvements in deployment efficiency and security compliance.
-      </p>
+
+    {/* Technical Excellence Card */}
+    <div className="group relative">
+      {/* Gradient border effect */}
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-black to-black rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
+      
+      {/* Card content */}
+      <div className="relative h-full bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl transition duration-300 group-hover:scale-[1.01]">
+        <h3 className="font-bold text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-black to-black">
+          Technical Excellence
+        </h3>
+        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+          Architected and implemented robust cloud solutions, achieving 99.9% uptime and significant 
+          improvements in deployment efficiency and security compliance.
+        </p>
+      </div>
     </div>
   </div>
 </div>
