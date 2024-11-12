@@ -30,25 +30,20 @@ export const generatePDF = () => {
     yPos += (splitText.length * fontSize) + 10;
   };
 
-  // Document Title
+  // Document Title and other sections
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(20);
   doc.text('Ayodele Ajayi', 40, yPos);
   addSpace();
 
-  // Subtitle
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(12);
-  doc.setTextColor(51, 51, 51);
   doc.text('Lead DevSecOps Engineer & Technical Team Lead', 40, yPos);
   addSpace(15);
 
-  // Contact Info
   doc.setFontSize(10);
   doc.text('ayoinc@gmail.com | linkedin.com/in/ayoinc | github.com/ayointegral', 40, yPos);
   addSpace(30);
-
-  // Professional Summary
   // Full Professional Experience Section
 addSectionHeader('Professional Experience');
 
@@ -227,7 +222,7 @@ experiences.forEach(exp => {
     ['Python for Data Science', 'IBM']
   ];
 
-  const table = autoTable(doc, {
+  autoTable(doc, {
     startY: yPos,
     head: [['Certification', 'Issuer']],
     body: certifications,
@@ -235,7 +230,10 @@ experiences.forEach(exp => {
     headStyles: { fillColor: [41, 128, 185] }
   });
 
-  yPos = (doc.lastAutoTable.finalY || yPos) + 20;
+  // Correct way to access the final Y position after the table
+  yPos = (doc.autoTable.previous.finalY || yPos) + 20;
+
+  // Education Section
   addSectionHeader('Education');
   addBodyText('Diploma in Multimedia Technology - Dalewares Institute of Technology, Lagos, Nigeria');
 
