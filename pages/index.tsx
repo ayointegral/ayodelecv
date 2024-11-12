@@ -116,7 +116,7 @@ const Home = () => {
     Hey There <span className="wave">👋</span>
   </h2>
   <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-    I&apos;m a seasoned DevSecOps Engineer and Technical Leader with a proven track record in building and 
+    I'm a seasoned DevSecOps Engineer and Technical Leader with a proven track record in building and 
     scaling cloud infrastructure while fostering high-performing engineering teams. My expertise spans 
     cloud architecture, security implementation, and agile team leadership, with a particular focus on 
     AWS and Azure environments. I excel at bridging technical excellence with business objectives through:
@@ -534,7 +534,7 @@ const Home = () => {
                 </div>
 
                 {/* In Progress Certifications */}
-                {/* <div>
+                <div>
                   <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">In Progress</h4>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-400">
                     <li>• AWS Certified Security - Specialty </li>
@@ -542,19 +542,16 @@ const Home = () => {
                     <li>• Certified Cloud Security Professional (CCSP)</li>
                     <li>• CompTIA Security+</li>
                   </ul>
-                </div> */}
+                </div>
               </div>
             </div>
 
             {/* About Section */}
             <div className="text-left w-full">
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Throughout my career, I've been passionate about pushing the boundaries of what's possible 
-                in DevSecOps and cloud engineering. Whether it's designing scalable systems, optimising 
-                performance, or navigating complex security requirements, I thrive on tackling tough 
-                challenges and delivering innovative solutions. Currently pursuing advanced security 
-                certifications to further enhance my expertise in cloud security and DevSecOps practices.
-              </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                Throughout my career, I&#39;ve been passionate about pushing the boundaries of what&#39;s possible in DevSecOps and cloud engineering. Whether it&#39;s designing scalable systems, optimising performance, or navigating complex security requirements, I thrive on tackling tough challenges and delivering innovative solutions. Currently pursuing advanced security certifications to further enhance my expertise in cloud security and DevSecOps practices.
+            </p>
+
             </div>
           </div>
         </main>
