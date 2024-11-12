@@ -231,7 +231,8 @@ experiences.forEach(exp => {
   });
 
   // Correct way to access the final Y position after the table
-  yPos = (doc.autoTable.previous.finalY || yPos) + 20;
+//   yPos = (doc.autoTable.previous.finalY || yPos) + 20;
+yPos = (doc.lastAutoTable?.finalY || yPos) + 20;
 
   // Education Section
   addSectionHeader('Education');
