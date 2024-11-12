@@ -234,8 +234,8 @@ experiences.forEach(exp => {
     margin: { left: 40, right: 40 },
     headStyles: { fillColor: [41, 128, 185] }
   });
-  
-  yPos = (table.finalY || yPos) + 20;
+
+  yPos = (doc.lastAutoTable.finalY || yPos) + 20;
   addSectionHeader('Education');
   addBodyText('Diploma in Multimedia Technology - Dalewares Institute of Technology, Lagos, Nigeria');
 
