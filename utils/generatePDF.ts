@@ -227,15 +227,15 @@ experiences.forEach(exp => {
     ['Python for Data Science', 'IBM']
   ];
 
-  autoTable(doc, {
+  const table = autoTable(doc, {
     startY: yPos,
     head: [['Certification', 'Issuer']],
     body: certifications,
     margin: { left: 40, right: 40 },
     headStyles: { fillColor: [41, 128, 185] }
   });
-
-  yPos = doc.lastAutoTable.finalY + 20;
+  
+  yPos = (table.finalY || yPos) + 20;
   addSectionHeader('Education');
   addBodyText('Diploma in Multimedia Technology - Dalewares Institute of Technology, Lagos, Nigeria');
 
