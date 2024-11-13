@@ -1,6 +1,6 @@
 // components/Navigation.tsx
-import Link from 'next/link';
-import { ThemeToggle } from './ThemeToggle';
+import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navigation = () => {
   return (
@@ -8,20 +8,20 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="h-16 flex items-center justify-between">
           <div className="flex space-x-8">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               Home
             </Link>
-            <Link 
-              href="/blog" 
+            <Link
+              href="/blog"
               className="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               Blog
             </Link>
-            <Link 
-              href="/about" 
+            <Link
+              href="/about"
               className="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               About Me
