@@ -1,4 +1,4 @@
-// types.d.ts
+// utils/types.d.ts
 import 'jspdf';
 
 declare module 'jspdf' {

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Download } from 'lucide-react';
-import { generatePDF } from '../utils/generatePDF';
+import { generateDoc } from '../utils/generateDoc'; 
 import { 
   Github, 
   Linkedin, 
@@ -98,7 +98,7 @@ const Home = () => {
             {/* Add near social links */}
 
             <button
-      onClick={() => generatePDF()}
+      onClick={generateDoc}
       className="flex items-center gap-2 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-xl shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
     >
       <Download className="w-4 h-4" />
