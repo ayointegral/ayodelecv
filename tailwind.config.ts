@@ -1,13 +1,13 @@
 // tailwind.config.ts
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
     container: {
@@ -68,34 +68,34 @@ const config = {
           "100%": { opacity: "0", transform: "translateY(10px)" },
         },
         tilt: {
-          '0%, 50%, 100%': {
-            transform: 'rotate(0deg)',
+          "0%, 50%, 100%": {
+            transform: "rotate(0deg)",
           },
-          '25%': {
-            transform: 'rotate(1deg)',
+          "25%": {
+            transform: "rotate(1deg)",
           },
-          '75%': {
-            transform: 'rotate(-1deg)',
+          "75%": {
+            transform: "rotate(-1deg)",
           },
         },
         float: {
-          '0%, 100%': {
-            transform: 'translateY(0)',
+          "0%, 100%": {
+            transform: "translateY(0)",
           },
-          '50%': {
-            transform: 'translateY(-5px)',
+          "50%": {
+            transform: "translateY(-5px)",
           },
         },
       },
       animation: {
         "fade-in": "fade-in 200ms ease-out",
         "fade-out": "fade-out 200ms ease-in",
-        tilt: 'tilt 10s infinite linear',
-        float: 'float 3s ease-in-out infinite',
+        tilt: "tilt 10s infinite linear",
+        float: "float 3s ease-in-out infinite",
       },
     },
   },
   plugins: [],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
