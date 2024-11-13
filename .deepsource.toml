@@ -12,9 +12,14 @@ name = "javascript"
     "meteor",
     "angular"
   ]
-
-[[transformers]]
-name = "prettier"
-
-[[transformers]]
-name = "standardjs"
+  environment = [
+    "nodejs",
+    "jquery",
+    "jest",
+    "vitest",
+    "jasmine",
+    "mocha",
+    "cypress",
+    "mongo",
+    "browser"
+  ]
