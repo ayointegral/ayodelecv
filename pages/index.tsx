@@ -151,7 +151,7 @@ const Home = () => {
       
       {/* Card content */}
       <div className="relative h-full bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl transition duration-300 group-hover:scale-[1.01]">
-        <h3 className="font-bold text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-black to-black">
+        <h3 className="font-bold text-xl mb-4 text-gray-900 dark:text-white">
           Team Leadership
         </h3>
         <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -168,7 +168,7 @@ const Home = () => {
       
       {/* Card content */}
       <div className="relative h-full bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl transition duration-300 group-hover:scale-[1.01]">
-        <h3 className="font-bold text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-black to-black">
+        <h3 className="font-bold text-xl mb-4 text-gray-900 dark:text-white">
           Technical Excellence
         </h3>
         <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
