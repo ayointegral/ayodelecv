@@ -71,7 +71,7 @@ const Home = () => {
           <div className="flex flex-col items-center md:items-start md:w-1/3 mb-16 md:mb-0 animate-fade-in">
             <div className="relative group">
               {/* Animated glow effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-75 group-hover:opacity-100 animate-tilt transition duration-1000"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-75 group-hover:opacity-100 animate-tilt transition duration-1000" />
 
               {/* Image container */}
               <div className="relative w-48 h-48 rounded-full overflow-hidden ring-2 ring-white/20 dark:ring-slate-800">
@@ -171,7 +171,7 @@ const Home = () => {
                 {/* Team Leadership Card */}
                 <div className="group relative">
                   {/* Gradient border effect */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-black to-black rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-black to-black rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-500" />
 
                   {/* Card content */}
                   <div className="relative h-full bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl transition duration-300 group-hover:scale-[1.01]">
@@ -189,7 +189,7 @@ const Home = () => {
                 {/* Technical Excellence Card */}
                 <div className="group relative">
                   {/* Gradient border effect */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-black to-black rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-black to-black rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-500" />
 
                   {/* Card content */}
                   <div className="relative h-full bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl transition duration-300 group-hover:scale-[1.01]">
