@@ -113,7 +113,7 @@ const ZeroTrustArchitecture = () => {
           <section id="conclusion" className="mb-12">
             <h2 className="text-3xl font-bold mb-4">Conclusion</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Zero Trust Architecture is not just a cybersecurity framework; it's a strategic approach to ensuring the integrity and security of modern digital infrastructures...
+              Zero Trust Architecture is not just a cybersecurity framework; it&apos;s a strategic approach to ensuring the integrity and security of modern digital infrastructures...
             </p>
           </section>
 
