@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import Navigation from '../../components/Navigation';
-import Footer from '../../components/Footer';
-import Image from 'next/image';
+import Head from "next/head";
+import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
+import Image from "next/image";
 
 const SecureByDesign = () => {
   const relatedPosts = [
@@ -18,7 +18,9 @@ const SecureByDesign = () => {
   return (
     <>
       <Head>
-        <title>Secure by Design: Embedding Cybersecurity in Every Phase of SDLC</title>
+        <title>
+          Secure by Design: Embedding Cybersecurity in Every Phase of SDLC
+        </title>
         <meta
           name="description"
           content="Learn how to integrate cybersecurity into every phase of the SDLC for better, safer software development."
@@ -30,9 +32,12 @@ const SecureByDesign = () => {
         <main className="max-w-4xl mx-auto px-6 py-12">
           {/* Hero Section */}
           <div className="mb-12 text-center">
-            <h1 className="text-4xl font-bold mb-4">Secure by Design: Embedding Cybersecurity in Every Phase of SDLC</h1>
+            <h1 className="text-4xl font-bold mb-4">
+              Secure by Design: Embedding Cybersecurity in Every Phase of SDLC
+            </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Learn how to integrate cybersecurity into every phase of the SDLC to build resilient, secure software systems.
+              Learn how to integrate cybersecurity into every phase of the SDLC
+              to build resilient, secure software systems.
             </p>
           </div>
 
@@ -51,12 +56,51 @@ const SecureByDesign = () => {
           <nav className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">Table of Contents</h2>
             <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-              <li><a href="#introduction" className="text-blue-500 hover:underline">Introduction</a></li>
-              <li><a href="#key-concepts" className="text-blue-500 hover:underline">Define Key Concepts</a></li>
-              <li><a href="#cybersecurity-sdlc" className="text-blue-500 hover:underline">Cybersecurity in SDLC</a></li>
-              <li><a href="#best-practices" className="text-blue-500 hover:underline">Best Practices</a></li>
-              <li><a href="#case-studies" className="text-blue-500 hover:underline">Case Studies</a></li>
-              <li><a href="#conclusion" className="text-blue-500 hover:underline">Conclusion</a></li>
+              <li>
+                <a
+                  href="#introduction"
+                  className="text-blue-500 hover:underline"
+                >
+                  Introduction
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#key-concepts"
+                  className="text-blue-500 hover:underline"
+                >
+                  Define Key Concepts
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#cybersecurity-sdlc"
+                  className="text-blue-500 hover:underline"
+                >
+                  Cybersecurity in SDLC
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#best-practices"
+                  className="text-blue-500 hover:underline"
+                >
+                  Best Practices
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#case-studies"
+                  className="text-blue-500 hover:underline"
+                >
+                  Case Studies
+                </a>
+              </li>
+              <li>
+                <a href="#conclusion" className="text-blue-500 hover:underline">
+                  Conclusion
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -64,21 +108,25 @@ const SecureByDesign = () => {
           <section id="introduction" className="mb-12">
             <h2 className="text-3xl font-bold mb-4">Introduction</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Cybersecurity is a critical pillar of technological development and operational security in the rapidly evolving digital landscape...
+              Cybersecurity is a critical pillar of technological development
+              and operational security in the rapidly evolving digital
+              landscape...
             </p>
           </section>
 
           <section id="key-concepts" className="mb-12">
             <h2 className="text-3xl font-bold mb-4">Define Key Concepts</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Before diving into SDLC integration, it’s essential to understand what cybersecurity and SDLC mean...
+              Before diving into SDLC integration, it’s essential to understand
+              what cybersecurity and SDLC mean...
             </p>
           </section>
 
           <section id="cybersecurity-sdlc" className="mb-12">
             <h2 className="text-3xl font-bold mb-4">Cybersecurity in SDLC</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              The intersection of cybersecurity and SDLC represents a strategic approach to software development that prioritises security...
+              The intersection of cybersecurity and SDLC represents a strategic
+              approach to software development that prioritises security...
             </p>
           </section>
 
@@ -94,14 +142,16 @@ const SecureByDesign = () => {
           <section id="case-studies" className="mb-12">
             <h2 className="text-3xl font-bold mb-4">Case Studies</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Explore real-world examples of organisations that succeeded or failed due to their approach to cybersecurity...
+              Explore real-world examples of organisations that succeeded or
+              failed due to their approach to cybersecurity...
             </p>
           </section>
 
           <section id="conclusion" className="mb-12">
             <h2 className="text-3xl font-bold mb-4">Conclusion</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Integrating cybersecurity into the SDLC is not just a technical necessity but a strategic imperative for organisations today...
+              Integrating cybersecurity into the SDLC is not just a technical
+              necessity but a strategic imperative for organisations today...
             </p>
           </section>
 
@@ -123,14 +173,16 @@ const SecureByDesign = () => {
           <section id="author" className="mt-12 text-center">
             <h3 className="text-xl font-bold mb-2">About the Author</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Ayodele Ajayi is a Senior DevOps Engineer passionate about cybersecurity, cloud architecture, and innovation.
+              Ayodele Ajayi is a Senior DevOps Engineer passionate about
+              cybersecurity, cloud architecture, and innovation.
             </p>
           </section>
 
           {/* Call to Action */}
           <div className="text-center mt-12">
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              Want to learn more about secure development practices? Join our mailing list for exclusive insights.
+              Want to learn more about secure development practices? Join our
+              mailing list for exclusive insights.
             </p>
             <a
               href="/subscribe"

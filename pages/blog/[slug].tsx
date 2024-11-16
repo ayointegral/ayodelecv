@@ -1,8 +1,8 @@
-import { useRouter } from 'next/router';
-import Head from 'next/head';
-import Navigation from '../../components/Navigation';
-import Footer from '../../components/Footer';
-import Image from 'next/image';
+import { useRouter } from "next/router";
+import Head from "next/head";
+import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
+import Image from "next/image";
 
 // Blog data for dynamic routing
 const blogPosts = [
@@ -83,7 +83,9 @@ const BlogPost = () => {
       <div className="min-h-screen bg-white dark:bg-slate-900 text-gray-900 dark:text-white">
         <Navigation />
         <main className="max-w-4xl mx-auto px-6 py-12">
-          <p className="text-center text-gray-500">Blog post not found. Please check the URL.</p>
+          <p className="text-center text-gray-500">
+            Blog post not found. Please check the URL.
+          </p>
         </main>
         <Footer />
       </div>
@@ -94,7 +96,10 @@ const BlogPost = () => {
     <>
       <Head>
         <title>{blogContent.title} - Ayodele Ajayi</title>
-        <meta name="description" content={blogContent.content.substring(0, 150)} />
+        <meta
+          name="description"
+          content={blogContent.content.substring(0, 150)}
+        />
       </Head>
       <div className="min-h-screen bg-white dark:bg-slate-900 text-gray-900 dark:text-white">
         <Navigation />

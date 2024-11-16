@@ -1,9 +1,9 @@
 // pages/blog.tsx
-import Head from 'next/head';
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
-import Image from 'next/image';
-import Link from 'next/link';
+import Head from "next/head";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+import Image from "next/image";
+import Link from "next/link";
 
 const Blog = () => {
   const blogPosts = [
@@ -86,7 +86,8 @@ const Blog = () => {
           <div className="mb-16 text-center">
             <h1 className="text-4xl font-bold mb-4">Blog</h1>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Stay ahead in AI, software engineering, and information security with expert insights and practical advice.
+              Stay ahead in AI, software engineering, and information security
+              with expert insights and practical advice.
             </p>
           </div>
 
@@ -107,11 +108,18 @@ const Blog = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="text-sm text-blue-500 mb-2">{post.category}</div>
+                  <div className="text-sm text-blue-500 mb-2">
+                    {post.category}
+                  </div>
                   <h2 className="text-xl font-bold mb-2">{post.title}</h2>
                   <p className="text-sm text-gray-500 mb-4">{post.date}</p>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">{post.description}</p>
-                  <Link href={`/blog/${post.slug}`} className="text-blue-500 font-medium hover:underline">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    {post.description}
+                  </p>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="text-blue-500 font-medium hover:underline"
+                  >
                     Read More →
                   </Link>
                 </div>
