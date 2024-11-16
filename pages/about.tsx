@@ -80,7 +80,7 @@ const AboutMe = () => {
             </p>
               </div>
               <div className="relative w-[300px] h-[300px]">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl blur opacity-75"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl blur opacity-75" />
               <Image
               src="/images/about.jpg"
               alt="Ayodele Ajayi"
