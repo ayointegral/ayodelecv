@@ -101,7 +101,7 @@ const AiModernSoftwareEngineering = () => {
           <section id="conclusion" className="mb-12">
             <h2 className="text-3xl font-bold mb-4">Conclusion</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              AI is not just a tool; it's a transformative force shaping the future of software engineering. By embracing AI responsibly, developers can unlock new levels of efficiency and creativity...
+              AI is not just a tool; it&apos;s a transformative force shaping the future of software engineering. By embracing AI responsibly, developers can unlock new levels of efficiency and creativity...
             </p>
           </section>
 

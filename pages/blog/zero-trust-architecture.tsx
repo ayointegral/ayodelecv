@@ -65,14 +65,14 @@ const ZeroTrustArchitecture = () => {
           <section id="introduction" className="mb-12">
             <h2 className="text-3xl font-bold mb-4">Introduction</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              As cyber threats evolve, traditional security models are no longer sufficient. Zero Trust Architecture (ZTA) offers a transformative approach, ensuring that no entity, whether inside or outside the network, is automatically trusted...
+              As cyber threats evolve, traditional security models are no longer sufficient. Zero Trust Architecture (ZTA) offers a transformative approach, ensuring that no entity, whether inside or outside the network, is automatically trusted&hellip;
             </p>
           </section>
 
           <section id="what-is-zero-trust" className="mb-12">
             <h2 className="text-3xl font-bold mb-4">What is Zero Trust?</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Zero Trust is a cybersecurity framework that operates on the principle of "never trust, always verify." It assumes that every access request, regardless of origin, must be authenticated and authorised...
+              Zero Trust is a cybersecurity framework that operates on the principle of &ldquo;never trust, always verify.&rdquo; It assumes that every access request, regardless of origin, must be authenticated and authorised&hellip;
             </p>
           </section>
 
