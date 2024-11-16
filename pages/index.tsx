@@ -820,7 +820,7 @@ const Home = () => {
                 </div>
 
                 {/* In Progress Certifications */}
-                <div>
+                {/* <div>
                   <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">
                     In Progress
                   </h4>
@@ -833,7 +833,7 @@ const Home = () => {
                     <li>• Certified Cloud Security Professional (CCSP)</li>
                     <li>• CompTIA Security+</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
 
