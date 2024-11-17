@@ -1,11 +1,5 @@
 // utils/generateDoc.ts
-import {
-  Document,
-  Paragraph,
-  TextRun,
-  HeadingLevel,
-Packer,
-} from "docx";
+import { Document, Paragraph, TextRun, HeadingLevel, Packer } from "docx";
 
 export const generateDoc = async () => {
   // Create document
