@@ -68,7 +68,7 @@ const AboutMe = () => {
         <main className="max-w-4xl mx-auto px-6 py-12">
           {/* Hero Section */}
           <div className="mb-16">
-            <h1 className="text-4xl font-bold mb-8">About Me: Ayodele Ajayi</h1>
+            <h1 className="text-4xl font-bold mb-8">About Me</h1>
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="prose prose-lg dark:prose-invert">
                 <p>
