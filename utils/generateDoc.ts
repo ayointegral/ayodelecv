@@ -440,16 +440,12 @@ export const generateDoc = async () => {
 
   // Generate and save document
   const blob = await Packer.toBlob(doc);
-  angular.module('yourModuleName').controller('YourController', ['$window', function($window) {
-      const url = $window.URL.createObjectURL(blob);
-  }]);
-  const link = $document[0].createElement("a");
+  const url = window.URL.createObjectURL(blob);
+  const link = document.createElement("a");
   link.href = url;
   link.setAttribute("download", "Ayodele_Ajayi_CV.docx");
-  $document[0].body.appendChild(link);
+  document.body.appendChild(link);
   link.click();
-  $document[0].body.removeChild(link);
-  angular.module('yourModuleName').controller('YourController', ['$window', function($window) {
-      $window.URL.revokeObjectURL(url);
-  }]);
+  document.body.removeChild(link);
+  window.URL.revokeObjectURL(url);
 };
