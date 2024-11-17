@@ -3,7 +3,7 @@ import { Github, Linkedin } from "lucide-react";
 
 /**
  * Represents the footer of a webpage.
- * 
+ *
  * @returns {JSX.Element} The JSX for the footer component.
  */
 const SocialLinks = () => (
@@ -31,8 +31,8 @@ const SocialLinks = () => (
 
 const FooterText = () => (
   <div className="text-gray-600 dark:text-gray-400 text-sm text-center">
-    Copyright © {new Date().getFullYear()} • Ayodele Ajayi - an
-    experienced leader in technology
+    Copyright © {new Date().getFullYear()} • Ayodele Ajayi - an experienced
+    leader in technology
   </div>
 );
 
