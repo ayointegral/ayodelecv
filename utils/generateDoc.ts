@@ -1,5 +1,11 @@
 // utils/generateDoc.ts
-import { Document, Paragraph, TextRun, HeadingLevel, Packer } from "docx";
+import {
+  Document,
+  Paragraph,
+  TextRun,
+  HeadingLevel,
+Packer,
+} from "docx";
 
 export const generateDoc = async () => {
   // Create document
@@ -434,12 +440,13 @@ export const generateDoc = async () => {
 
   // Generate and save document
   const blob = await Packer.toBlob(doc);
-  const url = window.URL.createObjectURL(blob);
+  const url = URL.createObjectURL(blob);
+  
   const link = document.createElement("a");
   link.href = url;
-  link.setAttribute("download", "Ayodele_Ajayi_CV.docx");
+  link.setAttribute("download", "CV.docx");
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-  window.URL.revokeObjectURL(url);
+  URL.revokeObjectURL(url);
 };
