@@ -4,8 +4,7 @@ import {
   Paragraph,
   TextRun,
   HeadingLevel,
-  Packer,
-  BorderStyle,
+Packer,
 } from "docx";
 
 export const generateDoc = async () => {
@@ -441,12 +440,16 @@ export const generateDoc = async () => {
 
   // Generate and save document
   const blob = await Packer.toBlob(doc);
-  const url = window.URL.createObjectURL(blob);
-  const link = document.createElement("a");
+  angular.module('yourModuleName').controller('YourController', ['$window', function($window) {
+      const url = $window.URL.createObjectURL(blob);
+  }]);
+  const link = $document[0].createElement("a");
   link.href = url;
   link.setAttribute("download", "Ayodele_Ajayi_CV.docx");
-  document.body.appendChild(link);
+  $document[0].body.appendChild(link);
   link.click();
-  document.body.removeChild(link);
-  window.URL.revokeObjectURL(url);
+  $document[0].body.removeChild(link);
+  angular.module('yourModuleName').controller('YourController', ['$window', function($window) {
+      $window.URL.revokeObjectURL(url);
+  }]);
 };
