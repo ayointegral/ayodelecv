@@ -53,7 +53,7 @@ const AiModernSoftwareEngineering = () => {
               layout="fill"
               objectFit="cover"
               className="rounded-xl"
-              priority={true} // Preload this image for better INP
+              priority // Preload this image for better INP
             />
           </div>
 
