@@ -53,7 +53,7 @@ const AiModernSoftwareEngineering = () => {
               layout="fill"
               objectFit="cover"
               className="rounded-xl"
-              priority={true} // Preload this image for better INP
+              priority // Preload this image for better INP
             />
           </div>
 
@@ -62,17 +62,26 @@ const AiModernSoftwareEngineering = () => {
             <h2 className="text-2xl font-semibold mb-4">Table of Contents</h2>
             <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
               <li>
-                <a href="#introduction" className="text-blue-500 hover:underline">
+                <a
+                  href="#introduction"
+                  className="text-blue-500 hover:underline"
+                >
                   Introduction
                 </a>
               </li>
               <li>
-                <a href="#ai-in-development" className="text-blue-500 hover:underline">
+                <a
+                  href="#ai-in-development"
+                  className="text-blue-500 hover:underline"
+                >
                   AI in Software Development
                 </a>
               </li>
               <li>
-                <a href="#productivity" className="text-blue-500 hover:underline">
+                <a
+                  href="#productivity"
+                  className="text-blue-500 hover:underline"
+                >
                   Improving Productivity
                 </a>
               </li>
@@ -104,7 +113,9 @@ const AiModernSoftwareEngineering = () => {
           </section>
 
           <section id="ai-in-development" className="mb-12">
-            <h2 className="text-3xl font-bold mb-4">AI in Software Development</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              AI in Software Development
+            </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               AI tools assist developers in writing cleaner code, detecting bugs
               early, and even optimising algorithms...
@@ -124,7 +135,9 @@ const AiModernSoftwareEngineering = () => {
           </section>
 
           <section id="challenges" className="mb-12">
-            <h2 className="text-3xl font-bold mb-4">Challenges and Limitations</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Challenges and Limitations
+            </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               While AI offers immense potential, challenges like over-reliance
               on AI tools, ethical concerns, and limitations in creativity
@@ -133,7 +146,9 @@ const AiModernSoftwareEngineering = () => {
           </section>
 
           <section id="future" className="mb-12">
-            <h2 className="text-3xl font-bold mb-4">Future of AI in Engineering</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Future of AI in Engineering
+            </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               The future of AI in software engineering includes deeper
               integrations, more powerful automation tools, and ethical
